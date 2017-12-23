@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B2EDD2B1FEED759002981D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD2A1FEED759002981D2 /* AppDelegate.m */; };
+		2B2EDD2D1FEED759002981D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2EDD2C1FEED759002981D2 /* Assets.xcassets */; };
+		2B2EDD301FEED759002981D2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B2EDD2E1FEED759002981D2 /* MainMenu.xib */; };
+		2B2EDD331FEED759002981D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD321FEED759002981D2 /* main.m */; };
+		2B2EDD3E1FEED759002981D2 /* opengoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD3D1FEED759002981D2 /* opengoTests.m */; };
+		2B2EDD491FEED759002981D2 /* opengoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD481FEED759002981D2 /* opengoUITests.m */; };
+		2B2EDD5A1FEEFDC1002981D2 /* SerialRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD591FEEFDC1002981D2 /* SerialRead.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B2EDD3A1FEED759002981D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2EDD1E1FEED759002981D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B2EDD251FEED759002981D2;
+			remoteInfo = opengo;
+		};
+		2B2EDD451FEED759002981D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2EDD1E1FEED759002981D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B2EDD251FEED759002981D2;
+			remoteInfo = opengo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B2EDD261FEED759002981D2 /* opengo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opengo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2EDD291FEED759002981D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B2EDD2A1FEED759002981D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B2EDD2C1FEED759002981D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B2EDD2F1FEED759002981D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2B2EDD311FEED759002981D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B2EDD321FEED759002981D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B2EDD341FEED759002981D2 /* opengo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = opengo.entitlements; sourceTree = "<group>"; };
+		2B2EDD391FEED759002981D2 /* opengoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = opengoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2EDD3D1FEED759002981D2 /* opengoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = opengoTests.m; sourceTree = "<group>"; };
+		2B2EDD3F1FEED759002981D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B2EDD441FEED759002981D2 /* opengoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = opengoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2EDD481FEED759002981D2 /* opengoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = opengoUITests.m; sourceTree = "<group>"; };
+		2B2EDD4A1FEED759002981D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B2EDD581FEEFDC1002981D2 /* SerialRead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerialRead.h; sourceTree = "<group>"; };
+		2B2EDD591FEEFDC1002981D2 /* SerialRead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerialRead.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B2EDD231FEED759002981D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2EDD361FEED759002981D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2EDD411FEED759002981D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B2EDD1D1FEED759002981D2 = {
+			isa = PBXGroup;
+			children = (
+				2B2EDD281FEED759002981D2 /* opengo */,
+				2B2EDD3C1FEED759002981D2 /* opengoTests */,
+				2B2EDD471FEED759002981D2 /* opengoUITests */,
+				2B2EDD271FEED759002981D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B2EDD271FEED759002981D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B2EDD261FEED759002981D2 /* opengo.app */,
+				2B2EDD391FEED759002981D2 /* opengoTests.xctest */,
+				2B2EDD441FEED759002981D2 /* opengoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B2EDD281FEED759002981D2 /* opengo */ = {
+			isa = PBXGroup;
+			children = (
+				2B2EDD291FEED759002981D2 /* AppDelegate.h */,
+				2B2EDD2A1FEED759002981D2 /* AppDelegate.m */,
+				2B2EDD581FEEFDC1002981D2 /* SerialRead.h */,
+				2B2EDD591FEEFDC1002981D2 /* SerialRead.m */,
+				2B2EDD2C1FEED759002981D2 /* Assets.xcassets */,
+				2B2EDD2E1FEED759002981D2 /* MainMenu.xib */,
+				2B2EDD311FEED759002981D2 /* Info.plist */,
+				2B2EDD321FEED759002981D2 /* main.m */,
+				2B2EDD341FEED759002981D2 /* opengo.entitlements */,
+			);
+			path = opengo;
+			sourceTree = "<group>";
+		};
+		2B2EDD3C1FEED759002981D2 /* opengoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B2EDD3D1FEED759002981D2 /* opengoTests.m */,
+				2B2EDD3F1FEED759002981D2 /* Info.plist */,
+			);
+			path = opengoTests;
+			sourceTree = "<group>";
+		};
+		2B2EDD471FEED759002981D2 /* opengoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B2EDD481FEED759002981D2 /* opengoUITests.m */,
+				2B2EDD4A1FEED759002981D2 /* Info.plist */,
+			);
+			path = opengoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B2EDD251FEED759002981D2 /* opengo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B2EDD4D1FEED759002981D2 /* Build configuration list for PBXNativeTarget "opengo" */;
+			buildPhases = (
+				2B2EDD221FEED759002981D2 /* Sources */,
+				2B2EDD231FEED759002981D2 /* Frameworks */,
+				2B2EDD241FEED759002981D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = opengo;
+			productName = opengo;
+			productReference = 2B2EDD261FEED759002981D2 /* opengo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B2EDD381FEED759002981D2 /* opengoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B2EDD501FEED759002981D2 /* Build configuration list for PBXNativeTarget "opengoTests" */;
+			buildPhases = (
+				2B2EDD351FEED759002981D2 /* Sources */,
+				2B2EDD361FEED759002981D2 /* Frameworks */,
+				2B2EDD371FEED759002981D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B2EDD3B1FEED759002981D2 /* PBXTargetDependency */,
+			);
+			name = opengoTests;
+			productName = opengoTests;
+			productReference = 2B2EDD391FEED759002981D2 /* opengoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B2EDD431FEED759002981D2 /* opengoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B2EDD531FEED759002981D2 /* Build configuration list for PBXNativeTarget "opengoUITests" */;
+			buildPhases = (
+				2B2EDD401FEED759002981D2 /* Sources */,
+				2B2EDD411FEED759002981D2 /* Frameworks */,
+				2B2EDD421FEED759002981D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B2EDD461FEED759002981D2 /* PBXTargetDependency */,
+			);
+			name = opengoUITests;
+			productName = opengoUITests;
+			productReference = 2B2EDD441FEED759002981D2 /* opengoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B2EDD1E1FEED759002981D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = computadoresfazemarte;
+				TargetAttributes = {
+					2B2EDD251FEED759002981D2 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					2B2EDD381FEED759002981D2 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2B2EDD251FEED759002981D2;
+					};
+					2B2EDD431FEED759002981D2 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2B2EDD251FEED759002981D2;
+					};
+				};
+			};
+			buildConfigurationList = 2B2EDD211FEED759002981D2 /* Build configuration list for PBXProject "opengo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B2EDD1D1FEED759002981D2;
+			productRefGroup = 2B2EDD271FEED759002981D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B2EDD251FEED759002981D2 /* opengo */,
+				2B2EDD381FEED759002981D2 /* opengoTests */,
+				2B2EDD431FEED759002981D2 /* opengoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B2EDD241FEED759002981D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2EDD2D1FEED759002981D2 /* Assets.xcassets in Resources */,
+				2B2EDD301FEED759002981D2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2EDD371FEED759002981D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2EDD421FEED759002981D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B2EDD221FEED759002981D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2EDD331FEED759002981D2 /* main.m in Sources */,
+				2B2EDD5A1FEEFDC1002981D2 /* SerialRead.m in Sources */,
+				2B2EDD2B1FEED759002981D2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2EDD351FEED759002981D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2EDD3E1FEED759002981D2 /* opengoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2EDD401FEED759002981D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2EDD491FEED759002981D2 /* opengoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B2EDD3B1FEED759002981D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B2EDD251FEED759002981D2 /* opengo */;
+			targetProxy = 2B2EDD3A1FEED759002981D2 /* PBXContainerItemProxy */;
+		};
+		2B2EDD461FEED759002981D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B2EDD251FEED759002981D2 /* opengo */;
+			targetProxy = 2B2EDD451FEED759002981D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B2EDD2E1FEED759002981D2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B2EDD2F1FEED759002981D2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B2EDD4B1FEED759002981D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2B2EDD4C1FEED759002981D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2B2EDD4E1FEED759002981D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = opengo/opengo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = opengo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cfa.opengo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2B2EDD4F1FEED759002981D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = opengo/opengo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = opengo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cfa.opengo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2B2EDD511FEED759002981D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = opengoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cfa.opengoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/opengo.app/Contents/MacOS/opengo";
+			};
+			name = Debug;
+		};
+		2B2EDD521FEED759002981D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = opengoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cfa.opengoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/opengo.app/Contents/MacOS/opengo";
+			};
+			name = Release;
+		};
+		2B2EDD541FEED759002981D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = opengoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cfa.opengoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = opengo;
+			};
+			name = Debug;
+		};
+		2B2EDD551FEED759002981D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = opengoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cfa.opengoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = opengo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B2EDD211FEED759002981D2 /* Build configuration list for PBXProject "opengo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2EDD4B1FEED759002981D2 /* Debug */,
+				2B2EDD4C1FEED759002981D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B2EDD4D1FEED759002981D2 /* Build configuration list for PBXNativeTarget "opengo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2EDD4E1FEED759002981D2 /* Debug */,
+				2B2EDD4F1FEED759002981D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B2EDD501FEED759002981D2 /* Build configuration list for PBXNativeTarget "opengoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2EDD511FEED759002981D2 /* Debug */,
+				2B2EDD521FEED759002981D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B2EDD531FEED759002981D2 /* Build configuration list for PBXNativeTarget "opengoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2EDD541FEED759002981D2 /* Debug */,
+				2B2EDD551FEED759002981D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B2EDD1E1FEED759002981D2 /* Project object */;
+}
