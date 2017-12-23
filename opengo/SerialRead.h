@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface SerialRead : NSObject
-+ (void) listAvailablePorts;
++ (void) connectToDevice;
 @end

@@ -14,6 +14,7 @@
 		2B2EDD3E1FEED759002981D2 /* opengoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD3D1FEED759002981D2 /* opengoTests.m */; };
 		2B2EDD491FEED759002981D2 /* opengoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD481FEED759002981D2 /* opengoUITests.m */; };
 		2B2EDD5A1FEEFDC1002981D2 /* SerialRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD591FEEFDC1002981D2 /* SerialRead.m */; };
+		2B2EDD681FEF03C0002981D2 /* ORSSerial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B2EDD641FEF03A0002981D2 /* ORSSerial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2B2EDD251FEED759002981D2;
 			remoteInfo = opengo;
+		};
+		2B2EDD631FEF03A0002981D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2EDD5E1FEF03A0002981D2 /* ORSSerialPort.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9DCA89121A2BB106009285EB;
+			remoteInfo = ORSSerial;
+		};
+		2B2EDD651FEF03A0002981D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2EDD5E1FEF03A0002981D2 /* ORSSerialPort.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D7472131B6D7767002D8B10;
+			remoteInfo = "ORSSerialPort Tests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -50,6 +65,7 @@
 		2B2EDD4A1FEED759002981D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B2EDD581FEEFDC1002981D2 /* SerialRead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerialRead.h; sourceTree = "<group>"; };
 		2B2EDD591FEEFDC1002981D2 /* SerialRead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerialRead.m; sourceTree = "<group>"; };
+		2B2EDD5E1FEF03A0002981D2 /* ORSSerialPort.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ORSSerialPort.xcodeproj; path = "Frameworks/ORSSerialPort/Framework Project/ORSSerialPort.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2EDD681FEF03C0002981D2 /* ORSSerial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +101,8 @@
 				2B2EDD3C1FEED759002981D2 /* opengoTests */,
 				2B2EDD471FEED759002981D2 /* opengoUITests */,
 				2B2EDD271FEED759002981D2 /* Products */,
+				2B2EDD5E1FEF03A0002981D2 /* ORSSerialPort.xcodeproj */,
+				2B2EDD671FEF03C0002981D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +148,22 @@
 				2B2EDD4A1FEED759002981D2 /* Info.plist */,
 			);
 			path = opengoUITests;
+			sourceTree = "<group>";
+		};
+		2B2EDD5F1FEF03A0002981D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B2EDD641FEF03A0002981D2 /* ORSSerial.framework */,
+				2B2EDD661FEF03A0002981D2 /* ORSSerialPort Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B2EDD671FEF03C0002981D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +258,12 @@
 			mainGroup = 2B2EDD1D1FEED759002981D2;
 			productRefGroup = 2B2EDD271FEED759002981D2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2B2EDD5F1FEF03A0002981D2 /* Products */;
+					ProjectRef = 2B2EDD5E1FEF03A0002981D2 /* ORSSerialPort.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2B2EDD251FEED759002981D2 /* opengo */,
@@ -231,6 +272,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2B2EDD641FEF03A0002981D2 /* ORSSerial.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ORSSerial.framework;
+			remoteRef = 2B2EDD631FEF03A0002981D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2B2EDD661FEF03A0002981D2 /* ORSSerialPort Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ORSSerialPort Tests.xctest";
+			remoteRef = 2B2EDD651FEF03A0002981D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2B2EDD241FEED759002981D2 /* Resources */ = {
