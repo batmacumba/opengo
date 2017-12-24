@@ -13,8 +13,9 @@
 		2B2EDD331FEED759002981D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD321FEED759002981D2 /* main.m */; };
 		2B2EDD3E1FEED759002981D2 /* opengoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD3D1FEED759002981D2 /* opengoTests.m */; };
 		2B2EDD491FEED759002981D2 /* opengoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD481FEED759002981D2 /* opengoUITests.m */; };
-		2B2EDD5A1FEEFDC1002981D2 /* SerialRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD591FEEFDC1002981D2 /* SerialRead.m */; };
+		2B2EDD5A1FEEFDC1002981D2 /* SerialConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD591FEEFDC1002981D2 /* SerialConnect.m */; };
 		2B2EDD681FEF03C0002981D2 /* ORSSerial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B2EDD641FEF03A0002981D2 /* ORSSerial.framework */; };
+		2B2EDD6B1FEF3A1A002981D2 /* ORSSerialPortHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EDD6A1FEF3A1A002981D2 /* ORSSerialPortHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,9 +64,11 @@
 		2B2EDD441FEED759002981D2 /* opengoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = opengoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2EDD481FEED759002981D2 /* opengoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = opengoUITests.m; sourceTree = "<group>"; };
 		2B2EDD4A1FEED759002981D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B2EDD581FEEFDC1002981D2 /* SerialRead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerialRead.h; sourceTree = "<group>"; };
-		2B2EDD591FEEFDC1002981D2 /* SerialRead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerialRead.m; sourceTree = "<group>"; };
+		2B2EDD581FEEFDC1002981D2 /* SerialConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerialConnect.h; sourceTree = "<group>"; };
+		2B2EDD591FEEFDC1002981D2 /* SerialConnect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerialConnect.m; sourceTree = "<group>"; };
 		2B2EDD5E1FEF03A0002981D2 /* ORSSerialPort.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ORSSerialPort.xcodeproj; path = "Frameworks/ORSSerialPort/Framework Project/ORSSerialPort.xcodeproj"; sourceTree = "<group>"; };
+		2B2EDD691FEF3A1A002981D2 /* ORSSerialPortHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORSSerialPortHelper.h; sourceTree = "<group>"; };
+		2B2EDD6A1FEF3A1A002981D2 /* ORSSerialPortHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPortHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +124,10 @@
 			children = (
 				2B2EDD291FEED759002981D2 /* AppDelegate.h */,
 				2B2EDD2A1FEED759002981D2 /* AppDelegate.m */,
-				2B2EDD581FEEFDC1002981D2 /* SerialRead.h */,
-				2B2EDD591FEEFDC1002981D2 /* SerialRead.m */,
+				2B2EDD581FEEFDC1002981D2 /* SerialConnect.h */,
+				2B2EDD591FEEFDC1002981D2 /* SerialConnect.m */,
+				2B2EDD691FEF3A1A002981D2 /* ORSSerialPortHelper.h */,
+				2B2EDD6A1FEF3A1A002981D2 /* ORSSerialPortHelper.m */,
 				2B2EDD2C1FEED759002981D2 /* Assets.xcassets */,
 				2B2EDD2E1FEED759002981D2 /* MainMenu.xib */,
 				2B2EDD311FEED759002981D2 /* Info.plist */,
@@ -322,7 +327,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B2EDD331FEED759002981D2 /* main.m in Sources */,
-				2B2EDD5A1FEEFDC1002981D2 /* SerialRead.m in Sources */,
+				2B2EDD6B1FEF3A1A002981D2 /* ORSSerialPortHelper.m in Sources */,
+				2B2EDD5A1FEEFDC1002981D2 /* SerialConnect.m in Sources */,
 				2B2EDD2B1FEED759002981D2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
