@@ -1,5 +1,5 @@
 //
-//  SerialConnect.h
+//  OGSerialHandler.h
 //  opengo
 //
 //  Created by bat macumba on 23/12/17.
@@ -10,6 +10,10 @@
 #import <ORSSerial/ORSSerial.h>
 #import "ORSSerialPortHelper.h"
 
-@interface SerialConnect : NSObject
+@interface OGSerialHandler : NSObject
 + (void) autoConfig;
++ (void) setDevice: (NSString *)deviceName;
++ (void) refreshDevices;
++ (NSInteger) currentRate;
++ (void) setRate: (NSInteger) rate;
 @end
