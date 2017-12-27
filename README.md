@@ -32,7 +32,7 @@ The following messages are available at the current version:
 
 ## Contributing
 
-Feel free to send pull requests if you're interested. I'm a rookie objc/cocoa coder, so I feel like I made lots of bizarre choices.
+Feel free to send pull requests if you're interested. I'm a rookie objc/cocoa coder, so I feel like I made lots of mistakes.
 
 ## Get in touch
 
