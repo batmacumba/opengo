@@ -1,9 +1,5 @@
 //
 //  ORSSerialPortHelper.m
-//  opengo
-//
-//  Created by bat macumba on 23/12/17.
-//  based on ORSSerialPortCommandLineDemo
 //
 //  Created by Andrew Madsen on 12/11/12.
 //    Copyright (c) 2011-2012 Andrew R. Madsen (andrew@openreelsoftware.com)

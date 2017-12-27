@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:opengo.xcodeproj">
+      location = "group:../arduino">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
