@@ -1,3 +1,4 @@
+/* Change these to match your pins */
 const int GoButton = 5;
 const int PauseButton = 6;
 const int StopButton = 7;
@@ -5,6 +6,7 @@ const int LoadButton = 8;
 const int UpButton = 9;
 const int DownButton = 10;
 
+/* Setup function */
 void setup() {
   Serial.begin(9600);
   pinMode(GoButton, INPUT_PULLUP);
@@ -15,8 +17,9 @@ void setup() {
   pinMode(DownButton, INPUT_PULLUP);
 }
 
+/* Loop */
 void loop() {
-  /*if (digitalRead(GoButton) == LOW) {
+  if (digitalRead(GoButton) == LOW) {
     Serial.print("QLab_Go");
     while (digitalRead(GoButton) == LOW) ;
   }
@@ -41,8 +44,8 @@ void loop() {
       while (digitalRead(DownButton) == LOW) ;
   }
   delay(5);
-  */
-  // funcoes teste
+  /**************************
+  // test function
   Serial.print("QLab_Go");
   delay(1000);
   Serial.print("QLab_Pause");
@@ -55,4 +58,5 @@ void loop() {
   delay(1000);
   Serial.print("QLab_Down");
   delay(1000);
+ **************************/
 }
