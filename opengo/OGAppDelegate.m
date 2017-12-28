@@ -14,10 +14,12 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     /* initializes the status bar icon and names it */
     self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    self.statusBar.title = @"G";
-    //self.statusBar.image =
-    self.statusBar.menu = self.statusMenu;
+
+//    self.statusBar.title = @"G";
+    self.statusBar.button.image = [NSImage imageNamed:@"disconnected"];
     self.statusBar.highlightMode = YES;
+    
+    self.statusBar.menu = self.statusMenu;
     [self.statusMenu setDelegate:self];
     /* sets the rates submenu */
     [self setupRates];
@@ -38,11 +40,6 @@
     /* def: every time the user clicks on the status bar icon, refresh devices and rates */
     [OGSerialHandler refreshDevices];
     [self refreshRates];
-}
-
-- (void)setStatus:(NSString *)status {
-    /* def: setter for the status item */
-    [self.statusItem setTitle:status];
 }
 
 - (void)addDevice:(NSString *)deviceName
@@ -102,6 +99,18 @@
         if (currentRate == item.tag) [item setState:NSOnState];
         else [item setState:NSOffState];
     }
+}
+
+- (void) setConnected {
+    /* def: updates the menu */
+    [self.statusItem setTitle:@"Status: Connected"];
+    self.statusBar.button.image = [NSImage imageNamed:@"connected"];
+}
+
+- (void) setDisconnected {
+    /* def: updates the menu */
+    [self.statusItem setTitle:@"Status: Disconnected"];
+    self.statusBar.button.image = [NSImage imageNamed:@"disconnected"];
 }
 
 @end

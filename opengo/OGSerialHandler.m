@@ -18,7 +18,7 @@ static ORSSerialPortHelper *serialPortHelper = nil;
     /* removes previous entries */
     [(OGAppDelegate *)[NSApplication sharedApplication].delegate cleanDevices];
     /* resets the status item */
-    [(OGAppDelegate *)[NSApplication sharedApplication].delegate setStatus:@"Status: Disconnected"];
+    [(OGAppDelegate *)[NSApplication sharedApplication].delegate setDisconnected];
     /* declarations */
     ORSSerialPortManager *manager = [ORSSerialPortManager sharedSerialPortManager];
     NSArray *availablePorts = manager.availablePorts;
@@ -32,7 +32,7 @@ static ORSSerialPortHelper *serialPortHelper = nil;
             isConnected = YES;
             //NSLog(@"Connected device: %@", deviceName);
             /* updates the status item */
-            [(OGAppDelegate *)[NSApplication sharedApplication].delegate setStatus:@"Status: Connected"];
+            [(OGAppDelegate *)[NSApplication sharedApplication].delegate setConnected];
         }
         else {
             //NSLog(@"Disconnected device: %@", deviceName);

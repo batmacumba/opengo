@@ -2,7 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../arduino">
+      location = "group:/Users/batmacumba/computadoresfazemarte/XCode/opengo/opengo/Connected@1x.png">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/batmacumba/computadoresfazemarte/XCode/opengo/opengo/Connected@2x.png">
    </FileRef>
    <FileRef
       location = "self:">

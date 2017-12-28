@@ -17,7 +17,8 @@
 @property (weak) IBOutlet NSMenuItem *rateMenu;
 @property (weak) IBOutlet NSMenu *rateList;
 
-- (void)setStatus:(NSString *)status;
+- (void)setConnected;
+- (void)setDisconnected;
 - (void)addDevice:(NSString *)deviceName connectedFlag:(BOOL) isConnected;
 - (void)cleanDevices;
 
