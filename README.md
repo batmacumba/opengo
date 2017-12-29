@@ -11,7 +11,7 @@ opengo can receive serial messages from arduino boards or similars and fire the 
 
 ## Bundled app
 
-[v0.1-alpha](https://github.com/batmacumba/opengo/tree/v0.1-alpha)
+[v0.1-alpha](https://github.com/batmacumba/opengo/releases/tag/v0.1-alpha)
 
 ## Developers
 
