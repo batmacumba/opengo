@@ -2,7 +2,6 @@
 # DISCLAIMER:
 This is a work in progress.
 Do not use this in a live show.
-I cannot be responsible for any bugs (there are lots!) or malfunctions.
 ```
 
 # opengo
