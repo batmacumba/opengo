@@ -9,7 +9,11 @@ I cannot be responsible for any bugs (there are lots!) or malfunctions.
 
 opengo can receive serial messages from arduino boards or similars and fire the corresponding applescripts for QLab control. Easily make your own custom go box, and use this app to control QLab without worrying about keyboard focus or MIDI.
 
-## Getting Started
+## Bundled app
+
+[opengo](https://github.com/batmacumba/opengo/blob/master/app/opengo.app)
+
+## Developers
 
 Open the project in XCode and build it. If you have an arduino board you can write your own code or use the sample provided. Simply program a button to send one of the serial messages in the dictionary.
 
